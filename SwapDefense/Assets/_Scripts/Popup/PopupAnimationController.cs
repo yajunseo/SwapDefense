@@ -1,10 +1,10 @@
 ﻿/* 
-* Copyright (C) SundayToz Corp. All Rights Reserved
+* Copyright Wemade Play Co., Ltd. All Rights Reserved
 * Unauthorized copying of this file, via any medium is strictly prohibited
 * Proprietary and confidential
 * 
-* @author Han Hyeonggeun <hyeonggeun.han@sundaytoz.com>
-* @created 2021/12/10
+* @author Han Hyeonggeun <hyeonggeun.han@wemadeplay.com>
+* @created 2022-04-08
 * @desc PopupAnimationController
 */
 using System;
@@ -17,7 +17,7 @@ using common;
 public class PopupAnimationController : MonoBehaviour
 {
     private void Start() {
-        //if(PopupManager.Instance.CurrentPopupState.Equals("PopupSetting")) this.GetComponent<Animator>().Play("OpenAnimation"); 
+        if(PopupManager.Instance.CurrentPopupState.Equals("PopupSetting")) this.GetComponent<Animator>().Play("OpenAnimation"); 
     }
 
     public void OnAnimationStart()
