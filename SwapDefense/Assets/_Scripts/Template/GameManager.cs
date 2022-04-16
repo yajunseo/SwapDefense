@@ -47,6 +47,8 @@ namespace common
 
             // 게임 화면이 자동으로 꺼지는 옵션 막기
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
+
         }
 
         private void Start()
